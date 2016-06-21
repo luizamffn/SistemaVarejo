@@ -21,7 +21,7 @@ public class Compra {
 	public double getValor() {
 		double preco = 0;
 		for (int i = 0; i < carrinho.size(); i++) {
-			preco += carrinho.get(i).getValor();
+			preco += carrinho.get(i).getValor() * carrinho.get(i).getQuantidade();
 		}
 		valor = preco;
 		return valor;
